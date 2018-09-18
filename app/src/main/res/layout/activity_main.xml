@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        app:srcCompat="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="90dp"
+        android:text="Binary Number"
+        android:textColor="@android:color/background_light"
+        app:fontFamily="@font/montserrat" />
+
+    <EditText
+        android:id="@+id/txtInputBinary"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/textinput"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="170dp"
+        android:text="Decimal Number"
+        android:textColor="@android:color/background_light"
+        app:fontFamily="@font/montserrat" />
+
+    <EditText
+        android:id="@+id/txtInputDecimal"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/textinput"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/round_btn_login2"
+        android:onClick="converttodecimal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Binary to Decimal Convertor"
+        android:textColor="@color/btnlogincolor"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:fontFamily="@font/montserrat" />
+
+
+
+</RelativeLayout>
